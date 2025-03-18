@@ -9,7 +9,12 @@ var config = {
             gravity: { y: 0 }, // sem gravidade, pois é um jogo de tiro espacial
             debug: false // desativa a exibição da depuraçaõ da física
         }
-    },
+    },           
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH
+        },
+
     scene: {
         preload: preload, // função de carregamento de assets
         create: create, // função de inicialização dos objetos do jogo 
